@@ -1,0 +1,35 @@
+{
+  "step": "10_baselines",
+  "model_tag": "mcdropout",
+  "lr": 0.001,
+  "batch_size": 8,
+  "max_epochs": 3,
+  "epochs_run": 3,
+  "python_seed": 42,
+  "numpy_seed": 42,
+  "torch_seed": 42,
+  "optimizer": "Adam",
+  "patience": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.7100625722434933,
+      "val_metric": 0.5263765136916916
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5409975087259735,
+      "val_metric": 0.4679938934066079
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.48982716842903107,
+      "val_metric": 0.4322295994921164
+    }
+  ],
+  "best_epoch": 3,
+  "best_val_metric": 0.4322295994921164,
+  "stopped_reason": "max_epochs_reached_3",
+  "last_checkpoint_path": "/kaggle/working/checkpoints/step10_mcdropout_last.pt",
+  "best_checkpoint_path": "/kaggle/working/checkpoints/step10_mcdropout_best.pt"
+}

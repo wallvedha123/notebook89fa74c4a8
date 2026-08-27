@@ -1,0 +1,35 @@
+{
+  "step": "10_baselines",
+  "model_tag": "sigmoid_baseline",
+  "lr": 0.001,
+  "batch_size": 8,
+  "max_epochs": 3,
+  "epochs_run": 3,
+  "python_seed": 42,
+  "numpy_seed": 42,
+  "torch_seed": 42,
+  "optimizer": "Adam",
+  "patience": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6724234610879222,
+      "val_metric": 0.5055153474405214
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4933315354852037,
+      "val_metric": 0.5138316713757329
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.43966523734800644,
+      "val_metric": 0.4194661076966818
+    }
+  ],
+  "best_epoch": 3,
+  "best_val_metric": 0.4194661076966818,
+  "stopped_reason": "max_epochs_reached_3",
+  "last_checkpoint_path": "/kaggle/working/checkpoints/step10_sigmoid_baseline_last.pt",
+  "best_checkpoint_path": "/kaggle/working/checkpoints/step10_sigmoid_baseline_best.pt"
+}

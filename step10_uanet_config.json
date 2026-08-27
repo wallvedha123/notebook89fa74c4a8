@@ -1,0 +1,35 @@
+{
+  "step": "10_baselines",
+  "model_tag": "uanet",
+  "lr": 0.001,
+  "batch_size": 8,
+  "max_epochs": 3,
+  "epochs_run": 3,
+  "python_seed": 42,
+  "numpy_seed": 42,
+  "torch_seed": 42,
+  "optimizer": "Adam",
+  "patience": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6358932613826996,
+      "val_metric": 0.5071741425758832
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.47358633713099546,
+      "val_metric": 0.48058256158581025
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.42642712593078613,
+      "val_metric": 0.4082338034913137
+    }
+  ],
+  "best_epoch": 3,
+  "best_val_metric": 0.4082338034913137,
+  "stopped_reason": "max_epochs_reached_3",
+  "last_checkpoint_path": "/kaggle/working/checkpoints/step10_uanet_last.pt",
+  "best_checkpoint_path": "/kaggle/working/checkpoints/step10_uanet_best.pt"
+}

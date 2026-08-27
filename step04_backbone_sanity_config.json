@@ -1,0 +1,29 @@
+{
+  "step": "04_backbone_sanity",
+  "lr": 0.001,
+  "batch_size": 8,
+  "epochs": 3,
+  "python_seed": 42,
+  "numpy_seed": 42,
+  "torch_seed": 42,
+  "optimizer": "Adam",
+  "loss": "BCE_logits + Dice",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.661722035256511,
+      "val_iou": 0.6574970681171912
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4885600752212815,
+      "val_iou": 0.7026220453636987
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.4370716821672863,
+      "val_iou": 0.7380826694818287
+    }
+  ],
+  "checkpoint_path": "/content/drive/MyDrive/Dataset WHU/checkpoints/step04_backbone_sanity.pt"
+}

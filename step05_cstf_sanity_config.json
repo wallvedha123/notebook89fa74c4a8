@@ -1,0 +1,30 @@
+{
+  "step": "05_cstf_sanity",
+  "module": "CrossScaleTransformerFusion at bottleneck (dim=1024, num_heads=8, mlp_ratio=4)",
+  "lr": 0.001,
+  "batch_size": 8,
+  "epochs": 3,
+  "python_seed": 42,
+  "numpy_seed": 42,
+  "torch_seed": 42,
+  "optimizer": "Adam",
+  "loss": "BCE_logits + Dice",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.7202069448442433,
+      "val_iou": 0.5589652104520952
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5841418466421479,
+      "val_iou": 0.7080273513089527
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.5286636526524687,
+      "val_iou": 0.6594744811390901
+    }
+  ],
+  "checkpoint_path": "/content/drive/MyDrive/Dataset WHU/checkpoints/step05_cstf_sanity.pt"
+}

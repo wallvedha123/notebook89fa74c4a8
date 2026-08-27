@@ -1,0 +1,9 @@
+{
+  "step": "10_baselines",
+  "model_tag": "temp_scaling",
+  "base_model_checkpoint": "/kaggle/working/checkpoints/step10_sigmoid_baseline_best.pt",
+  "method": "single scalar temperature T fit via LBFGS minimizing NLL on val/ logits (Guo et al. 2017)",
+  "temperature": 1.417087197303772,
+  "val_nll_before_scaling": 0.09981892257928848,
+  "val_nll_after_scaling": 0.09217008948326111
+}
